@@ -11,8 +11,8 @@ from flask_mysqldb import MySQL
 app = Flask(__name__)
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'Put your own password'
-app.config['MYSQL_DB'] = 'crime(Whatever your database name)'
+app.config['MYSQL_PASSWORD'] = 'password'
+app.config['MYSQL_DB'] = 'crime(Database name)'
 mysql = MySQL(app)
 
 @app.route('/')
